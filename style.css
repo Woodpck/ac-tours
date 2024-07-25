@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wdth,wght@0,8..144,87.5,500;1,8..144,87.5,500&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Sets the background color for the entire page */
 }
 
-.logo{
-   height: 100px;
-   cursor: pointer;
-   margin-right: auto;
+.logo {
+    height: 100px;
+    cursor: pointer;
+    margin-right: auto;
 }
 
-li, a{
-    font-family: "Roboto", serif;
+li, a {
+    font-family: "Roboto Serif", serif;
     font-weight: 500;
     font-size: 16px;
     color: black;
@@ -23,14 +23,16 @@ li, a{
 
 header {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Align items vertically in the center */
     padding: 30px 10%;
 }
 
 .nav_links {
     list-style: none;
-
+    display: flex;
+    align-items: center; /* Align list items vertically */
+    margin: 0;
 }
 
 .nav_links li {
@@ -46,8 +48,7 @@ header {
     color: rgba(6, 56, 69, 0.757);
 }
 
-button{
-    margin-left: 150px;
+button {
     padding: 9px 25px;
     background-color: #094554;
     border: none;
@@ -55,11 +56,83 @@ button{
     cursor: pointer;
     transition: all 0.3s ease 0s;
     color: #ffffff;
-    font-family: "Roboto", serif;
+    font-family: "Roboto Serif", serif;
     font-weight: 500;
     font-size: 16px;
+    margin-left: 20px; /* Adjust margin to align properly */
 }
 
-button:hover{
+button:hover {
     background-color: rgba(6, 56, 69, 0.757);
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px;
+    flex-basis: 50%;
+}
+
+.church {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.church img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.text h1 {
+    font-size: 70px;
+    font-family: "Roboto Serif", serif;
+    font-weight: lighter;
+    line-height: 1.2;
+}
+
+.text p {
+    font-family: "Roboto Serif", serif;
+    color: #094554;
+    font-weight: lighter;
+}
+
+.destinations {
+    padding: 20px 10%;
+    background-color: #ffffff; /* Ensure the background is white or your desired color */
+}
+
+.destinations h2 {
+    text-align: left; /* Align the text to the left */
+    font-family: "Roboto Serif", serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.destination-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+    gap: 15px; /* Space between images */
+}
+
+.destination-item {
+    overflow: hidden;
+    border-radius: 10px; /* Optional: rounded corners */
+    width: 100%; /* Make sure items take full width of grid cell */
+    height: 200px; /* Set a fixed height */
+}
+
+.destination-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
 }
