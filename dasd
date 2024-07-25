@@ -1,0 +1,108 @@
+[33mcommit 879a355f8b590a6e3ffca42b15ceb64ab0a806da[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: keldmng <jhnmchldmng@gmail.com>
+Date:   Thu Jul 25 13:52:24 2024 +0800
+
+    nav bar
+
+[1mdiff --git a/logo.png b/image/logo.png[m
+[1msimilarity index 100%[m
+[1mrename from logo.png[m
+[1mrename to image/logo.png[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 277d3f7..a08bfb7 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -8,15 +8,17 @@[m
+ </head>[m
+ <body>[m
+     <header>[m
+[31m-        <img class="logo" src="logo.png" alt="logo">[m
+[32m+[m[32m        <img class="logo" src="image/logo.png" alt="logo">[m
+         <nav>[m
+             <ul class="nav_links">[m
+[31m-                <li><a href="#"/li></a></li>[m
+[31m-                <li><a href="#"/li></a></li>[m
+[31m-                <li><a href="#"/li></a></li>[m
+[32m+[m[32m                <li><a href="#">Home</a></li>[m
+[32m+[m[32m                <li><a href="#">About Us</a></li>[m
+[32m+[m[32m                <li><a href="#">Destinations</a></li>[m
+[32m+[m[32m                <li><a href="#">Contacts</a></li>[m
+[32m+[m[32m                <li><a href="#">Packages</a></li>[m
+             </ul>[m
+         </nav> [m
+[31m-        <a class="cta" href="#"><button>Contact</button></a>[m
+[32m+[m[32m        <a class="cta" href="#"><button>Book Tour</button></a>[m
+     </header>[m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m
+[1mdiff --git a/style.css b/style.css[m
+[1mindex e69de29..12d2bf9 100644[m
+[1m--- a/style.css[m
+[1m+++ b/style.css[m
+[36m@@ -0,0 +1,65 @@[m
+[32m+[m[32m@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');[m
+[32m+[m
+[32m+[m[32m*{[m
+[32m+[m[32m    box-sizing: border-box;[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m    background-color: #ffffff;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.logo{[m
+[32m+[m[32m   height: 100px;[m
+[32m+[m[32m   cursor: pointer;[m
+[32m+[m[32m   margin-right: auto;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mli, a{[m
+[32m+[m[32m    font-family: "Roboto", serif;[m
+[32m+[m[32m    font-weight: 500;[m
+[32m+[m[32m    font-size: 16px;[m
+[32m+[m[32m    color: black;[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mheader {[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: flex-end;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    padding: 30px 10%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.nav_links {[m
+[32m+[m[32m    list-style: none;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.nav_links li {[m
+[32m+[m[32m    display: inline-block;[m
+[32m+[m[32m    padding: 0px 20px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.nav_links li a {[m
+[32m+[m[32m    transition: all 0.3s ease 0s;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.nav_links li a:hover {[m
+[32m+[m[32m    color: rgba(6, 56, 69, 0.757);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mbutton{[m
+[32m+[m[32m    margin-left: 150px;[m
+[32m+[m[32m    padding: 9px 25px;[m
+[32m+[m[32m    background-color: #094554;[m
+[32m+[m[32m    border: none;[m
+[32m+[m[32m    border-radius: 50px;[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m    transition: all 0.3s ease 0s;[m
+[32m+[m[32m    color: #ffffff;[m
+[32m+[m[32m    font-family: "Roboto", serif;[m
+[32m+[m[32m    font-weight: 500;[m
+[32m+[m[32m    font-size: 16px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mbutton:hover{[m
+[32m+[m[32m    background-color: rgba(6, 56, 69, 0.757);[m
+[32m+[m[32m}[m
