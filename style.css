@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     background-color: #ffffff; /* Sets the background color for the entire page */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .logo {
@@ -19,6 +21,10 @@ li, a {
     font-size: 16px;
     color: black;
     text-decoration: none;
+}
+
+.cta  {
+    margin-left: 100px;
 }
 
 header {
@@ -37,7 +43,7 @@ header {
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 
 .nav_links li a {
@@ -49,17 +55,17 @@ header {
 }
 
 button {
-    padding: 9px 25px;
+    letter-spacing: 1px;
+    padding: 20px 20px;
     background-color: #094554;
     border: none;
-    border-radius: 50px;
+    border-radius: 9999px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     color: #ffffff;
     font-family: "Roboto Serif", serif;
-    font-weight: 500;
-    font-size: 16px;
-    margin-left: 20px; /* Adjust margin to align properly */
+    font-weight: 550;
+    font-size: 16px; /* Adjust margin to align properly */
 }
 
 button:hover {
