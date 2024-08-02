@@ -118,10 +118,11 @@ button:hover {
 }
 
 .destinations h2 {
-    text-align: left; /* Align the text to the left */
+    text-align: center; /* Align the text to the left */
     font-family: "Roboto Serif", serif;
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .destination-gallery {
@@ -141,4 +142,17 @@ button:hover {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensure the image covers the container */
+}
+
+.c-f {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.fbg-grey {
+    height: 100px;
+    cursor: pointer;
+    margin-right: auto;
+    padding: 30px 10%;
 }
