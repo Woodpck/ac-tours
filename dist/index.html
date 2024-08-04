@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
-    <link href="./output.css" rel="stylesheet">
-    <script src=/src/script.js></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Custom styles (if any) -->
+    <script src="/src/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>AC Historical Tours and Consulting</title>
 </head>
-<body class="font-abc to-[#ffffff] w-[85%] mx-auto">
-    <header class="">
-        <nav class="flex justify-between items-center">
+<body class="font-abc bg-white">
+    <header class="max-w-6xl mx-auto w-full px-4 md:px-8 lg:px-16">
+        <nav class="flex justify-between items-center py-4">
             <div>
                 <img class="w-12" src="/image/logo.png" alt="logo">
             </div>
-            <div class="md:static absolute bg-blend-normal md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
-                <ul class="font-normal flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+            <div class="hidden md:flex md:flex-row md:items-center md:gap-8 gap-4">
+                <ul class="flex flex-col md:flex-row md:gap-8 gap-4 md:items-center">
                     <li><a class="hover:text-[#094554]" href="#">Home</a></li>
                     <li><a class="hover:text-[#094554]" href="#">About us</a></li>
                     <li><a class="hover:text-[#094554]" href="#">Destinations</a></li>
@@ -26,16 +26,29 @@
                 </ul>
             </div>
             <div class="flex items-center gap-6">
-                <button class="bg-[#355D67] text-xl font-black text-white px-4 py-4 rounded-full hover:bg-[#355d6789]">Book Tour</button>
+                <button class="bg-[#355D67] text-xl font-black text-white px-4 py-2 rounded-full hover:bg-[#355d6789]">Book Tour</button>
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
         </nav>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white absolute left-0 w-full">
+            <ul class="flex flex-col items-center gap-4 py-4">
+                <li><a class="hover:text-[#094554]" href="#">Home</a></li>
+                <li><a class="hover:text-[#094554]" href="#">About us</a></li>
+                <li><a class="hover:text-[#094554]" href="#">Destinations</a></li>
+                <li><a class="hover:text-[#094554]" href="#">Contacts</a></li>
+                <li><a class="hover:text-[#094554]" href="#">Packages</a></li>
+            </ul>
+        </div>
     </header>
-    <section class="">
-        <div class="max-w-[600px] pt-[200px]">
-            <h1 class="text-6xl">Let’s go back in time where we live inside Intramuros.</h1>
-            <p class="max-w-[450px] mt-1">“... With a memory of the past, I enter the future...”</p>
-            <p class="max-w-[450px]">José Rizal, El Consejo de los Dioses (1880)</p>
+    <section class="max-w-6xl mx-auto w-full px-4 md:px-8 lg:px-16 py-16 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+            <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-4 max-w-lg md:max-w-none">Let’s go back in time where we live inside Intramuros.</h1>
+            <p class="mt-1 text-lg">“... With a memory of the past, I enter the future...”</p>
+            <p class=" text-sm">José Rizal, El Consejo de los Dioses (1880)</p>
+        </div>
+        <div class="md:w-1/2 flex justify-center md:justify-end">
+            <img class="w-full h-auto max-w-md" src="/image/Cathedral.svg" alt="cathedral">
         </div>
     </section>
 </body>
