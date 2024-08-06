@@ -41,15 +41,44 @@
             </ul>
         </div>
     </header>
-    <section class="max-w-6xl mx-auto w-full px-4 md:px-8 lg:px-16 py-16 flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-            <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-4 max-w-lg md:max-w-none">Let’s go back in time where we live inside Intramuros.</h1>
-            <p class="mt-1 text-lg">“... With a memory of the past, I enter the future...”</p>
-            <p class=" text-sm">José Rizal, El Consejo de los Dioses (1880)</p>
+    <section class="max-w-6xl mx-auto w-full px-4 md:px-8 lg:px-16 py-16">
+        <!-- Hero Content -->
+        <div class="flex flex-col md:flex-row items-center mb-16">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-4 max-w-lg md:max-w-none">Let’s go back in time where we live inside Intramuros.</h1>
+                <p class="mt-1 text-lg">“... With a memory of the past, I enter the future...”</p>
+                <p class="text-sm">José Rizal, El Consejo de los Dioses (1880)</p>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end">
+                <img class="w-full h-auto max-w-md" src="/image/Cathedral.svg" alt="cathedral">
+            </div>
         </div>
-        <div class="md:w-1/2 flex justify-center md:justify-end">
-            <img class="w-full h-auto max-w-md" src="/image/Cathedral.svg" alt="cathedral">
+        <!-- Client Feedback Carousel -->
+        <div id="client-feedback">
+            <h2 class="text-3xl font-bold text-center mb-8">Client Feedback</h2>
+            <div class="relative">
+                <div id="slider" class="flex overflow-x-hidden">
+                    <div class="slide min-w-full transition-transform duration-300 ease-in-out">
+                        <img src="/image/fb-1.svg" alt="Client Feedback 1" class="w-full h-auto">
+                        <p class="text-center mt-4">"Amazing experience!"</p>
+                    </div>
+                    <div class="slide min-w-full transition-transform duration-300 ease-in-out">
+                        <img src="/image/fb-2.svg" alt="Client Feedback 2" class="w-full h-auto">
+                        <p class="text-center mt-4">"Loved every moment!"</p>
+                    </div>
+                    <div class="slide min-w-full transition-transform duration-300 ease-in-out">
+                        <img src="/image/fb-3.svg" alt="Client Feedback 3" class="w-full h-auto">
+                        <p class="text-center mt-4">"Highly recommended!"</p>
+                    </div>
+                </div>
+                <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1">
+                    &lt;
+                </button>
+                <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1">
+                    &gt;
+                </button>
+            </div>
         </div>
-    </section>
+    </section>    
 </body>
 </html>
