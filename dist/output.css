@@ -576,6 +576,14 @@ video {
   top: 50%;
 }
 
+.left-4{
+  left: 1rem;
+}
+
+.right-4{
+  right: 1rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -601,6 +609,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -621,6 +633,22 @@ video {
   width: 100%;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
+.w-3\/4{
+  width: 75%;
+}
+
+.w-4\/5{
+  width: 80%;
+}
+
+.w-48{
+  width: 12rem;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -635,6 +663,10 @@ video {
 
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-xl{
+  max-width: 36rem;
 }
 
 .-translate-y-1\/2{
@@ -680,6 +712,10 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .bg-\[\#355D67\]{
@@ -760,6 +796,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-black{
   font-weight: 900;
 }
@@ -777,8 +818,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-800{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
 .transition-transform{
   transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -798,6 +852,10 @@ video {
 .hover\:text-\[\#094554\]:hover{
   --tw-text-opacity: 1;
   color: rgb(9 69 84 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#355d6789\]:hover{
+  color: #355d6789;
 }
 
 @media (min-width: 768px){

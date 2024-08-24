@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="x-icon" ref="/image/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="output.css"> <!-- Custom styles (if any) -->
     <script src="/src/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -55,28 +56,28 @@
             </div>
         </div>
         <!-- Client Feedback Carousel -->
-        <div id="client-feedback">
+        <div id="client-feedback" class="max-w-6xl mx-auto px-4 md:px-8 lg:px-16 py-16">
             <h2 class="text-3xl font-bold text-center mb-8">Client Feedback</h2>
             <div class="relative">
                 <div id="slider" class="flex overflow-x-hidden">
-                    <div class="slide min-w-full transition-transform duration-300 ease-in-out">
-                        <img src="/image/fb-1.svg" alt="Client Feedback 1" class="w-full h-auto">
+                    <div class="slide flex flex-col items-center min-w-full transition-transform duration-300 ease-in-out">
+                        <img src="/image/fb-1.svg" alt="Client Feedback 1" class="w-4/5 max-w-lg h-auto">
                         <p class="text-center mt-4">"Amazing experience!"</p>
                     </div>
-                    <div class="slide min-w-full transition-transform duration-300 ease-in-out">
-                        <img src="/image/fb-2.svg" alt="Client Feedback 2" class="w-full h-auto">
+                    <div class="slide flex flex-col items-center min-w-full transition-transform duration-300 ease-in-out">
+                        <img src="/image/fb-2.svg" alt="Client Feedback 2" class="w-4/5 max-w-lg h-auto">
                         <p class="text-center mt-4">"Loved every moment!"</p>
                     </div>
-                    <div class="slide min-w-full transition-transform duration-300 ease-in-out">
-                        <img src="/image/fb-3.svg" alt="Client Feedback 3" class="w-full h-auto">
+                    <div class="slide flex flex-col items-center min-w-full transition-transform duration-300 ease-in-out">
+                        <img src="/image/fb-3.svg" alt="Client Feedback 3" class="w-4/5 max-w-lg h-auto">
                         <p class="text-center mt-4">"Highly recommended!"</p>
                     </div>
                 </div>
-                <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1">
-                    &lt;
+                <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 text-gray-800 hover:text-[#355d6789] text-3xl">
+                    <i class="fas fa-chevron-left"></i>
                 </button>
-                <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1">
-                    &gt;
+                <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 text-gray-800 hover:text-[#355d6789] text-3xl">
+                    <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
         </div>
